@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <h1 class="head">Smart Parking System</h1>
+      </div>
+     
+        <h1 class="booking">Confirmation</h1>
+        <img class="underline" src="./image/line.png"></img>
+        <div class="show">
+        <img class="car" style="vertical-align: middle" src="./image/car.png" />
+        <div class="slot-chosen" style="vertical-align: middle; display: inline">Slot Chosen:</div>
+        <h1 class="slotname"style="vertical-align: middle; display: inline">A1</h1>
+        
+
+
+        <form action="./receipt.html" method="post"  >
+            <label class="heading" for="name" >Customer Name:</label>
+          <input type="text" id ="name" class="cname" placeholder="Enter Name" required><br><br>
+          <label class="heading" for="number">Phone:</label>
+            <input type="tel" class="phone" for ="phone" placeholder="Enter Number" pattern="[0-9]{10}" required><br><br>
+            <label class="heading" for="entry">Entry Time:</label>
+            <input type="text" class="etime" placeholder="Hr:Min(24Hr clock)" required><br><br>
+            <label class="heading" for="exit">Exit Time:</label>
+            <input type="text" class="extime" placeholder="Hr:Min(24Hr clock)" required><br><br>
+           <div class="b5">
+            <a class="btn-1" href="./receipt.html">Rserve Now </a>
+           <a onclick="namechange()">click</a>
+        </div>
+       
+         
+      </form>
+    </div> 
+    <script src="./main.js"></script>
+</body>
+</html>
